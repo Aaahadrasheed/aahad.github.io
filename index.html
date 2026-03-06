@@ -1,0 +1,350 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aahad Rasheed | Project Management Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:rgba(0,0,0,0.5);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav h2{
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#38bdf8;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 20px;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:10px;
+animation:fadeDown 1s ease;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+max-width:600px;
+opacity:0.8;
+margin-bottom:25px;
+}
+
+.btn{
+padding:12px 25px;
+background:#38bdf8;
+color:#0f172a;
+border-radius:25px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
+/* SECTIONS */
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+/* ABOUT */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.about p{
+line-height:1.7;
+opacity:0.85;
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.skill-card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+transition:0.4s;
+}
+
+.skill-card:hover{
+transform:translateY(-8px);
+background:#334155;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.project-card{
+background:#1e293b;
+padding:30px;
+border-radius:12px;
+transition:0.4s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+background:#334155;
+}
+
+.project-card h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#020617;
+margin-top:40px;
+opacity:0.7;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeDown{
+from{
+opacity:0;
+transform:translateY(-30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<h2>Aahad</h2>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Hi, I'm <span>Aahad Rasheed</span></h1>
+
+<p>
+BS Project Management student passionate about project planning,
+data-driven decision making, and modern management tools.
+</p>
+
+<a class="btn" href="#contact">Contact Me</a>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+
+<p>
+I am a final semester student of BS Project Management with strong
+interest in project planning, execution, monitoring and strategic
+implementation. My academic journey has enabled me to develop strong
+analytical thinking, problem-solving and leadership capabilities.
+</p>
+
+<p>
+I enjoy working with project analytics tools and modern project
+management methodologies to improve organizational performance.
+Through my coursework I have completed several academic projects
+involving project scheduling, cost analysis and project evaluation.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill-card">
+<h3>Project Management</h3>
+<p>Project lifecycle, scheduling, integration management</p>
+</div>
+
+<div class="skill-card">
+<h3>Project Cost & Quality</h3>
+<p>Cost estimation, monitoring and quality assurance</p>
+</div>
+
+<div class="skill-card">
+<h3>Data Analytics</h3>
+<p>Tableau, Power BI, Excel dashboards</p>
+</div>
+
+<div class="skill-card">
+<h3>Project Tools</h3>
+<p>MS Project, scheduling techniques</p>
+</div>
+
+<div class="skill-card">
+<h3>ERP & IT Projects</h3>
+<p>Enterprise systems and IT project management</p>
+</div>
+
+<div class="skill-card">
+<h3>Soft Skills</h3>
+<p>Leadership, communication, teamwork and problem solving</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Academic Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>Project Scheduling Analysis</h3>
+<p>Developed project timelines using MS Project and scheduling techniques.</p>
+</div>
+
+<div class="project-card">
+<h3>Cost Management Study</h3>
+<p>Analyzed project budgets and cost control techniques.</p>
+</div>
+
+<div class="project-card">
+<h3>Data Analytics in Projects</h3>
+<p>Used Power BI and Tableau dashboards to visualize project performance.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact">
+
+<p>Email: aahad@example.com</p>
+
+<p>GitHub: <a href="#">github.com/aaahadrasheed</a></p>
+
+<p>LinkedIn: <a href="#">linkedin.com/in/aahad</a></p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Aahad Rasheed | Project Management Portfolio</p>
+
+</footer>
+
+</body>
+</html>
+```
